@@ -3,14 +3,15 @@
 /* Reset some default styles */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    /* ajustar o tamanho da tela */
+    /* ajustar o tamanho da tela tabletes */
     body {
         background-image: linear-gradient(to top, rgb(12, 12, 34), rgb(79, 79, 192));
 
     }
 
     .login {
-        width: 90vw;
+        width: 80vw;
+        height: 300px;
     }
 
     section.login > #imagem {
@@ -33,6 +34,7 @@
     }
     .login {
         width: 950px;
+        height: 350px;
     }
 
     section.login > #imagem {

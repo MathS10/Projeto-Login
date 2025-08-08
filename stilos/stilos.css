@@ -26,15 +26,16 @@ main {
     top: 50%;
     left: 50%;
     overflow: hidden;
-    transform: translate(-50%, -50%);
+
     background-color: white;
-    width: 200px;
+    width: 250px;
     height:515px;
     border-radius: 20px;
 
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.386);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.386);
     transition: width 0.4s, height 0.4s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -55,15 +56,44 @@ label {
     display: none;
 }
 
+.material-symbols-outlined {
+    width: 40px;
+    height: 40px;
+    color:rgba(0, 1, 4, 0.968);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2em;
+    transform: translateY(6px);
+
+}
+
 .campo {
+    background-color: rgb(131, 187, 211);
     display: block;
     width: 100%;
     height: 40px;
-    margin: 5px 0px 5px;
-    padding: 10px;
     border-radius: 5px;
-    cursor: pointer;
     border: 1px solid rgb(27, 88, 114);
+    margin: 5px 0px;
+
+}
+
+.entrada-dados {
+    background-color:whitesmoke;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 45px);
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    border: 1px solid rgb(27, 88, 114);
+    transform: translateX(3px);
+
+}
+
+.entrada-dados:focus {
+    background-color: rgb(237, 237, 255);
+
 }
 
 h1 {
@@ -83,7 +113,7 @@ input[type=submit] {
     height: 40px;
     background-color: rgb(55, 150, 191);
     color: white;
-    border: none;
+    border: 1px solid rgb(27, 88, 114);
     margin-top: 5px;
     padding: 10px;
     border-radius: 5px;
